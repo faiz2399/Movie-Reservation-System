@@ -1,0 +1,17 @@
+{% extends "base_admin.html" %}
+{% block content %}
+<form method="POST">
+  <br>
+  <br>
+  <br>
+    {# This hidden_tag is a CSRF security feature. #}
+    {{ form.hidden_tag() }}
+    {{ form.date.label }} {{ form.date() }}
+
+
+
+    {{ form.submit() }}
+</form>
+</div>
+
+{% endblock %}

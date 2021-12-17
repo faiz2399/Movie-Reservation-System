@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="jumbotron">
+  <h1>Here are you Bookings.</h1>
+  <table border= 1 px solid black, cellspacing = 5>
+    <thead>
+      <th>Username</th>
+      <th>Booking ID</th>
+      <th>Movie ID</th>
+      <th>Schedule ID</th>
+    </thead>
+    <tbody>
+      {% for values in lst %}
+      <tr>
+        <td>{{values[0]}}</td>
+        <td>{{values[1]}}</td>
+        <td>{{values[-2]}}</td>
+        <td>{{values[-1]}}</td>
+      </tr>
+      {% endfor %}
+</div>
+{% endblock %}

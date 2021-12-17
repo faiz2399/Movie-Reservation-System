@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="jumbotron">
+  <p>Please add options to book movie</p>
+
+  <form method="POST">
+
+  {{ form.hidden_tag() }}
+  {{ form.book_id.label }} {{ form.book_id() }}<br>
+  {{ form.schedule_id.label }} {{ form.schedule_id() }}<br>
+
+  {{ form.submit() }}
+
+  </form>
+</div>
+{% endblock %}

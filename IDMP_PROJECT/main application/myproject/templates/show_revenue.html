@@ -1,0 +1,16 @@
+{% extends "base_admin.html" %}
+{% block content %}
+<div class="jumbotron">
+  <br>
+  <br>
+  <br>
+  <h1>The revenue of that date is:</h1>
+
+{% for values in result %}
+
+<h2>{{values[0]}}</h2>
+
+{% endfor %}
+
+</div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="jumbotron">
+
+  <form method="POST">
+
+  {{ form.hidden_tag() }}
+  {{ form.user_name.label }} {{ form.user_name() }}<br>
+
+  {{ form.submit() }}
+
+  </form>
+</div>
+{% endblock %}

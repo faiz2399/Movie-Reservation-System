@@ -1,0 +1,20 @@
+{% extends "base_admin.html" %}
+{% block content %}
+<div class="jumbotron">
+  <h1>Here is a list of users.</h1>
+  <table border= 1 px solid black, cellspacing = 5>
+    <thead>
+      <th>User ID</th>
+      <th>Movie ID</th>
+      <th>Movie Name</th>
+    </thead>
+    <tbody>
+      {% for values in result %}
+      <tr>
+        <td>{{values[0]}}</td>
+        <td>{{values[1]}}</td>
+        <td>{{values[-1]}}</td>
+      </tr>
+      {% endfor %}
+</div>
+{% endblock %}
