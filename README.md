@@ -14,7 +14,7 @@ c) Once created active the environment using conda activate <virtual environemen
   
 # 3) Connecting to MySQL Database 
  a)Open rhe app.py file \
- b) Goto the MySQL connecter part of the code, and enter your MySQL workbench credentials. \ (Make sure you put in the correct databse name)\
+ b) Goto the MySQL connecter part of the code, and enter your MySQL workbench credentials. (Make sure you put in the correct databse name)\
  c) Now you are all set.Run python app.py file. \
  d) After running the file, go to your web browser and type in the local host(usually: http://127.0.0.1:5000/ ) and you should see the welcome page. \
  e) In order to see the user's dashboard Register first and then enter the user's credentials on the Login Page
